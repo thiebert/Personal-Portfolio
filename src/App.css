@@ -1,22 +1,104 @@
-.App {
-  text-align: center;
+h1, h2, h3 {
+    font-family: 'Asap', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+h1 {
+    font-weight: 900;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+    background-color: #848C8E;
+    font-family: 'Lato', sans-serif;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.mesh-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    min-width: 550px;
+    width:70%;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    height: 30vw;
+    background: -moz-linear-gradient(top, rgba(67,80,88,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(67,80,88,1) 0%, rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(67,80,88,1) 0%, rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#435058', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.title {  
+    height: 100%;  
+}
+
+.name {
+    color: #E8E8E8;
+}
+
+.portfolio {
+    padding-bottom: 100px;
+}
+
+.project {
+    color: #E8E8E8;
+    background-color: #435058;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 5%;
+}
+
+.project-text {
+    padding: 12px;
+}
+
+.link-image {
+    height: 25px;
+    width: 25px;
+    vertical-align: -10%;
+}
+
+.btn-project {
+    background-color: #E1F762;
+}
+
+.expand-button {
+    background-color: #E1F762;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    border-width: 0px;
+}
+
+.details {
+    margin-top: 1%;
+}
+
+.project-image {
+    width:100%;
+}
+
+.project-image-parent {
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+.image-fade {
+    position: absolute;
+    height:20%;
+    width:100%;
+    bottom: 0px;
+    z-index: 100;
+    margin: 0 auto;
+    background: -moz-linear-gradient(top, rgba(67,80,88,0) 0%, #435058 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(67,80,88,0) 0%, #435058 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(67,80,88,0) 0%, #435058 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#435058', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
 }

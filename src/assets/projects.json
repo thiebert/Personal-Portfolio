@@ -1,0 +1,163 @@
+{
+    "projects": [
+        {
+            "name": "Hands On",
+            "year": "2019",
+            "shortDescription": "A multi-platform mobile Augmented Reality (AR) application for a leading pharmaceutical brand",
+            "responsibilities": [
+                "Designed and implemented a rich navigation system which allowed new features to be efficiently added or rotated in",
+                "Designed and implemented a complex UI themeing system which allowed for effectively re-branding the application for different use-cases",
+                "Developed interesting User Experience (UX) features, such as an X-Ray view, informative touchpoints, and gesture controls",
+                "Implemented a complex animation system to allow for smooth visual transitions between various disease mutations that users could select",
+                "Designed and implemented a data management system to readily allow alterations to data, copy, artwork, or 3D content",
+                "Developed and managed tasks and user stories following an Agile methodology",
+                "Implemented a responsive design system to allow designs to fit a variety of mobile and tablet devices"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "ARKit",
+                "ARCore",
+                "ARFoundation",
+                "Augmented Reality"
+            ],
+            "images": [],
+            "link": "play.google.com"
+        },
+        {
+            "name": "GoreMed AR",
+            "year": "2019",
+            "shortDescription": "An informative Augmented Reality learning tool for educating patients and medical professionals about various Gore Medical products",
+            "responsibilities": [
+                "Designed and implemented a data management system to account for frequent changes and updates to the product catalog",
+                "Implemented an animation system to showcase important product features",
+                "Designed and implemented a navigation and UI system which allowed for efficient updates to the application's style and organization",
+                "Implemented a responsive design system to allow designs to fit a variety of mobile and tablet devices",
+                "Developed and managed tasks and user stories following an Agile methodology"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "ARKit",
+                "ARCore",
+                "ARFoundation",
+                "Augmented Reality"
+            ],
+            "images": [
+                "Gore.png"
+            ],
+            "link": "https://www.goremedical.com/global/augmented-reality-experience"
+        },
+        {
+            "name": "Confidential Industrial Application",
+            "year": "2019",
+            "shortDescription": "An application to aid in a complex installation process by scanning parts, determining their appropriate installation location, and recording that data",
+            "responsibilities": [
+                "Designed, implemented, and iterated upon a state-of-the-art scanning process to efficiently gather part information",
+                "Designed an algorithm to determine part installation eligibility, based on the current state of the installation process",
+                "Designed an algorithm to determine part installation location. based on eligibility and installation state",
+                "Implemented an Augmented Reality guide system to display to users the correct installation location",
+                "Designed and implemented a navigation and tutorial system to guide users through the installation process",
+                "Collaborated with backend team to help design an API to effectively communicate process state between the database and mobile application"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "ARKit",
+                "Native iOS",
+                "Augmented Reality"
+            ],
+            "images": []
+        },
+        {
+            "name": "PEERS Distracted Driving Simulation",
+            "year": "2018",
+            "shortDescription": "A Mixed Reality driving simulation to teach students the dangers of distracted driving",
+            "responsibilities": [
+                "Implemented a unique control system utilizing accelerometers attached to the steering wheel and pedals of real automobiles",
+                "Designed and iterated upon this control system to provide a fluid, understandable, and friendly user experience",
+                "Developed an artificial intelligence (AI) system to provide realistic traffic and pedestrian movements"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "Mixed Reality",
+                "Meta 2",
+                "Meta SDK",
+                "See-through AR",
+                "Artificial Intelligence"
+            ],
+            "images": [
+                "Peers.jpg"
+            ],
+            "link": "https://peersfoundation.org/programs/arddes-distracted-driving-prevention/"
+        },
+        {
+            "name": "CONTEC Clean Room Mopping Simulation",
+            "year": "2019",
+            "shortDescription": "A Mixed Reality instructional training tool for improving efficiency in sterilizing clean room environments",
+            "responsibilities": [
+                "Implemented a unique control system utlizing a tracked mop as a cursor in three dimensional space",
+                "Designed and implemented a navigation system to allow intuitive selection of training modes and options",
+                "Developed extensive animations and transitions to provide a compelling user experience",
+                "Implemented an algorithm to track user accuracy during the simulation",
+                "Developed and managed tasks and user stories following an Agile methodology",
+                "Performed extensive user testing and utilized feedback to improve the quality of experience"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "Mixed Reality",
+                "HTC Vive",
+                "Steam VR",
+                "Video Passthrough AR"
+            ],
+            "images": [
+                "Contec.png"
+            ]
+        },
+        {
+            "name": "World of Tanks AR Experience",
+            "year": "2017",
+            "shortDescription": "An Augmented Reality experience to allow users to learn about and interact with WW2-era tanks",
+            "responsibilities": [
+                "Organized and implemented the transition of an existing 3D experience to mobile devices",
+                "Implemented user interactions and gestures to allow for a customizable user experience",
+                "Implemented various user interface elements",
+                "Developed a localization system to allow multiple languages to be supported",
+                "Implemented a conversion to Mandarin Chinese for distribution through additional channels"
+            ],
+            "technologies": [
+                "Unity",
+                "C#",
+                "Augmented Reality",
+                "ARCore",
+                "ARKit"
+            ],
+            "images": [
+                "WorldOfTanks.png"
+            ],
+            "link": "https://worldoftanks.com/en/news/contests/ar-app-contest-0318/"
+        },
+        {
+            "name": "Exploring Game Space with Flappy Bird",
+            "year": "2015",
+            "shortDescription": "A simulation of Flappy Bird which allows for customizable game space and an auto-player",
+            "responsibilities": [
+                "Developed an Artifical Intelligence to navigate and test the difficulty of generated game space",
+                "Developed controls to allow users to set various parameters within the game space",
+                "Implemented parameterized deviation to the auto-player to better model human play"
+            ],
+            "technologies": [
+                "Javascript",
+                "Node.js",
+                "Phaser",
+                "Artificial Intelligence"
+            ],
+            "images": [
+                "Flappy.png"
+            ],
+            "link": "http://game.engineering.nyu.edu/projects/exploring-game-space/"
+        }
+    ]
+}
