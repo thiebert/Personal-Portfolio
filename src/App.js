@@ -18,7 +18,8 @@ function App() {
                         <Col md='8' lg='6'>
                             <h1 className="name">Trevin Hiebert</h1>
                             <h2 className="jobTitle">Software Creator</h2>
-                            <p className="personal-bio">I am a software engineer with 5 years of experience in creating augmented reality, virtual reality, mobile applications, and web experiences. Reach me at hello [at] buildatrev.in.</p>
+                            <p className="personal-bio"> Experienced software engineer with a passion for developing compelling, unique, and creative user experiences.</p>
+                            <p className="contact"> hello [at] buildatrev.in | <a href={require("./assets/files/TrevinHiebertResume.pdf")}>Resume</a> </p>
                         </Col>
                     </Row>
                 </Container>

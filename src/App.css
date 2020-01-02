@@ -6,6 +6,13 @@ h1 {
     font-weight: 900;
 }
 
+a {
+    color: #E8E8E8;
+}
+a:hover {
+    color: #E8E8E8;
+}
+
 .app {
     background-color: #848C8E;
     font-family: 'Lato', sans-serif;
