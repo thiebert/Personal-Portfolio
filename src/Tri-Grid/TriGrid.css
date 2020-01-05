@@ -7,9 +7,18 @@ body {
     padding-top: 5%;
 }
 
+.demo {
+    color: #E8E8E8;
+    background-color: #435058;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    padding: 2%;
+}
+
 .back-button {
     position: absolute;
-    left: 0px;
+    left: 2%;
     text-align: left;
     z-index: 100;
 }

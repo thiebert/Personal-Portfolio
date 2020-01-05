@@ -81,7 +81,7 @@ class TransformableTriGrid extends React.Component {
 
     render() {
         return (
-            <Container>
+            <Container className="demo">
                 <Row>
                     <Col><Link to='/' className="back-button"> &lt;Back </Link> </Col>
                 </Row>
