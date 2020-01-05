@@ -12,9 +12,9 @@ class Portfolio extends React.Component {
         return <Project value={i} />
     }
 
-    getProjectObjectsInColumn(projectList, i, j) {
+    getProjectObjectsInColumn(projectList, column, numberColumns) {
         let objects = [];
-        for (let x = i; x < projectList.length; x += j) {
+        for (let x = column; x < projectList.length; x += numberColumns) {
             objects.push(projectList[x]);
         }
         return (objects.map((project) => <div>{this.renderProject(project)}</div>));
@@ -24,14 +24,20 @@ class Portfolio extends React.Component {
         const projectList = projects.projects;
         return (
             <Row>
-                <Col md="6" lg="4">
+                <Col className="d-none d-lg-block" lg="4">
                     {this.getProjectObjectsInColumn(projectList, 1, 3)}
                 </Col>
-                <Col md="6" lg="4">
+                <Col className="d-none d-lg-block" lg="4">
                     {this.getProjectObjectsInColumn(projectList, 0, 3)}
                 </Col>
-                <Col md="6" lg="4">
+                <Col className="d-none d-lg-block" lg="4">
                     {this.getProjectObjectsInColumn(projectList, 2, 3)}
+                </Col>
+                <Col className="d-block d-lg-none" md="6">
+                    {this.getProjectObjectsInColumn(projectList, 1, 2)}
+                </Col>
+                <Col className="d-block d-lg-none" md="6">
+                    {this.getProjectObjectsInColumn(projectList, 0, 2)}
                 </Col>
             </Row>
         );
