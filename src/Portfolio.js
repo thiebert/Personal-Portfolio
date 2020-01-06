@@ -48,8 +48,8 @@ class Portfolio extends React.Component {
             <div className="portfolio">
                 <Container>
                     <Row>
-                        <Col md='6'>
-                            <h1>PORTFOLIO</h1>
+                        <Col>
+                            <h1 className="portfolio-title">PORTFOLIO</h1>
                         </Col>
                     </Row>
 

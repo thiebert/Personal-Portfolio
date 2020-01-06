@@ -15,7 +15,7 @@ function Home() {
                     width: "2048",
                     height: "2048",
                     frequency: "256",
-                    color: "#e1f762",
+                    color: "#B9CB51",
                     lineWidth: "8",
                     fadeCenterX: "2048",
                     fadeCenterY: "0",
@@ -23,17 +23,18 @@ function Home() {
                     fadeStart: "1600"
                 }} />
             <div className="heading">
-                <Container>
-                    <Row className="title">
-                        <Col md='8' lg='6'>
-                            <h1 className="name">Trevin Hiebert</h1>
-                            <h2 className="jobTitle">Software Creator</h2>
-                            <p className="personal-bio"> Experienced software engineer with a passion for developing compelling, unique, and creative user experiences.</p>
-                            <p className="contact"> hello [at] buildatrev.in | <a href={require("./assets/files/TrevinHiebertResume.pdf")}>Resume</a> </p>
-                        </Col>
-                    </Row>
+                <Container fluid className="title-block">
+                    <Container>
+                        <Row className="title">
+                            <Col md={{ span: 8 }}>
+                                <h1 className="name">Trevin Hiebert</h1>
+                                <h2 className="jobTitle">Software Creator</h2>
+                                <p className="personal-bio"> Experienced software engineer with a passion for developing compelling, unique, and creative user experiences.</p>
+                                <p className="contact"> hello [at] buildatrev.in | <a href={require("./assets/files/TrevinHiebertResume.pdf")}>Resume</a> </p>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Container>
-
             </div>
             <Portfolio />
         </div >
