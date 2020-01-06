@@ -122,14 +122,14 @@
         {
             "name": "Confidential Industrial Application",
             "year": "2019",
-            "shortDescription": "An application to aid in a complex installation process by scanning parts, determining their appropriate installation location, and recording that data",
+            "shortDescription": "An application to aid in a complex installation process by locating and displaying where to install parts using Augmented Reality",
             "responsibilities": [
                 "Designed, implemented, and iterated upon a state-of-the-art scanning process to efficiently gather part information",
                 "Designed an algorithm to determine part installation eligibility, based on the current state of the installation process",
-                "Designed an algorithm to determine part installation location. based on eligibility and installation state",
-                "Implemented an Augmented Reality guide system to display to users the correct installation location",
+                "Designed an algorithm to determine part where parts were to be installed, based on the current system state",
+                "Implemented an Augmented Reality guide system to display the correct installation location to users",
                 "Designed and implemented a navigation and tutorial system to guide users through the installation process",
-                "Collaborated with backend team to help design an API to effectively communicate process state between the database and mobile application"
+                "Collaborated with backend team to help design an API to effectively communicate between the database and mobile application"
             ],
             "technologies": [
                 "Unity",
