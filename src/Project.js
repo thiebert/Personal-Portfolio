@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import './App.css';
 
 class Project extends React.Component {
@@ -36,10 +35,16 @@ class Project extends React.Component {
 
     getProjectLink() {
         const link = this.props.value.link;
+        var content = "View Project";
+        if (this.props.value.altLinkText) {
+            content = this.props.value.altLinkText
+        }
         if (link) {
             return (
-                <a href={this.props.value.link}>
-                    <img className="link-image" src={require("./assets/images/link.png")} alt="Link" />
+                <a href={this.props.value.link} className="link">
+                    <div className="link-text">
+                        {content}
+                    </div>
                 </a>
             )
         }
@@ -59,37 +64,27 @@ class Project extends React.Component {
     }
 
     getDetails() {
-        if (this.state.isSelected) {
-            return (
-                <div className="details">
-                    <h4>Responsibilities:</h4>
-                    <ul>
-                        {this.getResponsibilities()}
-                    </ul>
-                    <h4>Technologies Used:</h4>
-                    <ul>
-                        {this.getTechnologies()}
-                    </ul>
-                    <Button variant="project" onClick={this.handleDeselectClick}>Hide details</Button>
+        return (
+            <div className="details">
+                <h4>About:</h4>
+                {this.props.value.longDescription}
 
-                </div>
-            )
-        }
-        else {
-            return (
-                <div className="details">
-                    <Button variant="project" onClick={this.handleSelectionClick}>More details</Button>
-                </div>
-            )
-        }
+            </div>
+        )
+
     }
 
     render() {
+        const image = this.props.value.images[0];
         return (
-            <div className="project">
-                {this.getProjectImage()}
-                <div className="project-text">
-                    <h3>{this.props.value.name} {this.getProjectLink()}</h3>
+            <div className="project" style={{ backgroundImage: "url(" + require("./assets/images/" + image) + ")" }} >
+                <div className="image-fade" />
+                <div className="image-cover" />
+                {this.getProjectLink()}
+
+                <div className="project-text" >
+
+                    <h3>{this.props.value.name}</h3>
 
                     <div className="project-bio"> {this.props.value.shortDescription} </div>
                     {this.getDetails()}

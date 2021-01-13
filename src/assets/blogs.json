@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "name": "COMING SOON",
+            "longDescription": "I'll be writing about my experiences and knowledge in the interactive apps and media space",
+            "images": [
+                "writing.jpg"
+            ]
+        },
+        {
+            "name": "AR UX",
+            "shortDescription": "THIS IS A PLACEHOLDER UNTIL THE ARTICLE IS ACTUALLY WRITTEN",
+            "longDescription": "An exploration of the various ways of interacting with the virtual world using AR, including examples and code samples to achieve similar results in your own projects",
+            "images": [
+                "HandsOn.jpg"
+            ],
+            "link": "/blog/ar-ux",
+            "altLinkText": "Read article"
+        },
+        {
+            "name": "Hands Free in VR",
+            "shortDescription": "THIS IS A PLACEHOLDER UNTIL THE ARTICLE IS ACTUALLY WRITTEN",
+            "longDescription": "Some VR experiences don't allow for the use of your hands or traditional controllers. I cover a list of things to consider when building such an experience and some code samples to help you create a similar experience in your own projects.",
+            "images": [
+                "HandsOn.jpg"
+            ],
+            "link": "/blog/hands-free",
+            "altLinkText": "Read article"
+        }
+    ]
+}

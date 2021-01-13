@@ -4,6 +4,7 @@
             "name": "Hands On",
             "year": "2019",
             "shortDescription": "A multi-platform mobile Augmented Reality (AR) application for a leading pharmaceutical brand",
+            "longDescription": "Hands On helped users understand the symptoms of psoriatic arthritis and how the disease progresses. The application had what was perhaps one of the most involved and layered UI designs I've implemented. I'm particularly proud of my efforts designing a theming system which allowed for efficiently re-branding the application for various trade shows, and for the design decisions that led to an easy mobile adaptation.",
             "responsibilities": [
                 "Designed and implemented a rich navigation system which allowed new features to be efficiently added or rotated in",
                 "Designed and implemented a complex UI themeing system which allowed for effectively re-branding the application for different use-cases",
@@ -28,7 +29,8 @@
         {
             "name": "GoreMed AR",
             "year": "2019",
-            "shortDescription": "An informative Augmented Reality learning tool for educating patients and medical professionals about various Gore Medical products",
+            "shortDescription": "An Augmented Reality learning tool for educating patients and medical professionals about various medical products",
+            "longDescription": "GoreMed AR is a tool to help users understand Gore's cardiovascular stents. The application features complex 3D animations and detailed human anatomy to show how and where these products go in the body. My best work on this project was designing a data management system to allow for frequent changes and updates to the available products.",
             "responsibilities": [
                 "Designed and implemented a data management system to account for frequent changes and updates to the product catalog",
                 "Implemented an animation system to showcase important product features",
@@ -50,9 +52,10 @@
             "link": "https://www.goremedical.com/global/augmented-reality-experience"
         },
         {
-            "name": "PEERS Distracted Driving Simulation",
+            "name": "PEERS Distracted Driving",
             "year": "2018",
             "shortDescription": "A Mixed Reality driving simulation to teach students the dangers of distracted driving",
+            "longDescription": "Unlike most driving simulators, this was designed to be ran inside of a real car. The software needed to be able to detect the state of the steering wheel and pedals through bluetooth-enabled accelerometers attached to each, and translate that into fluid controls inside the simulation.",
             "responsibilities": [
                 "Implemented a unique control system utilizing accelerometers attached to the steering wheel and pedals of real automobiles",
                 "Designed and iterated upon this control system to provide a fluid, understandable, and friendly user experience",
@@ -75,7 +78,8 @@
         {
             "name": "World of Tanks AR Experience",
             "year": "2017",
-            "shortDescription": "An Augmented Reality experience to allow users to learn about and interact with WW2-era tanks",
+            "shortDescription": "An Augmented Reality experience to allow users to learn about and interact with WWII-era tanks",
+            "longDescription": "Some really cool pieces of history are too rare or difficult to acquire, but augmented reality can help bring those artifacts to life. This is one such experience, pitting two WWII-era tanks, the T-44-100 and the Tiger I, against each other in an captivating, informative, animated experience. My work on this project helped to move it from the museum into your pocket.",
             "responsibilities": [
                 "Organized and implemented the transition of an existing 3D experience to mobile devices",
                 "Implemented user interactions and gestures to allow for a customizable user experience",
@@ -96,9 +100,10 @@
             "link": "https://worldoftanks.com/en/news/contests/ar-app-contest-0318/"
         },
         {
-            "name": "CONTEC Clean Room Mopping Simulation",
+            "name": "CONTEC Clean Room",
             "year": "2019",
             "shortDescription": "A Mixed Reality instructional training tool for improving efficiency in sterilizing clean room environments",
+            "longDescription": "This project utilizes a tracked mop as a cursor in VR space, taking the place of a traditional VR controller. It also offers three different training modes showing users instructions, floor coverage, or testing their accuracy. I'm proud of the level of polish and interactivity I was able to include in this application.",
             "responsibilities": [
                 "Implemented a unique control system utlizing a tracked mop as a cursor in three dimensional space",
                 "Designed and implemented a navigation system to allow intuitive selection of training modes and options",
@@ -138,12 +143,15 @@
                 "Native iOS",
                 "Augmented Reality"
             ],
-            "images": []
+            "images": [
+                "construction.jpg"
+            ]
         },
         {
             "name": "Exploring Game Space with Flappy Bird",
             "year": "2015",
             "shortDescription": "A simulation of Flappy Bird which allows for customizable game space and an auto-player",
+            "longDescription": "My primary task with this project was to break out the parameters of Flappy Bird into a format which a user could modify on the fly. Additionally, I worked on the AI that navigated the level and tested the difficulty of the user-generated game space.",
             "responsibilities": [
                 "Developed an Artifical Intelligence to navigate and test the difficulty of generated game space",
                 "Developed controls to allow users to set various parameters within the game space",
@@ -159,27 +167,6 @@
                 "Flappy.png"
             ],
             "link": "http://game.engineering.nyu.edu/projects/exploring-game-space/"
-        },
-        {
-            "name": "Tri-Grid",
-            "year": "2019",
-            "shortDescription": "A randomized image generator for unique, interesting accent or background images",
-            "responsibilities": [
-                "Developed an algorithm to generate unique, randomized grids",
-                "Developed React components to allow easy implementation into other projects",
-                "Implemented parameterization and customization features"
-            ],
-            "technologies": [
-                "React",
-                "HTML",
-                "Canvas",
-                "CSS",
-                "Javascript"
-            ],
-            "images": [
-                "Tri-Grid.png"
-            ],
-            "link": "tri-grid"
         },
         {
             "name": "MEMA4Kids",

@@ -1,0 +1,47 @@
+{
+    "projects": [
+        {
+            "name": "Exploring Game Space with Flappy Bird",
+            "year": "2015",
+            "shortDescription": "A simulation of Flappy Bird which allows for customizable game space and an auto-player",
+            "longDescription": "My primary task with this project was to break out the parameters of Flappy Bird into a format which a user could modify on the fly. Additionally, I worked on the AI that navigated the level and tested the difficulty of the user-generated game space.",
+            "responsibilities": [
+                "Developed an Artifical Intelligence to navigate and test the difficulty of generated game space",
+                "Developed controls to allow users to set various parameters within the game space",
+                "Implemented parameterized deviation to the auto-player to better model human play"
+            ],
+            "technologies": [
+                "Javascript",
+                "Node.js",
+                "Phaser",
+                "Artificial Intelligence"
+            ],
+            "images": [
+                "Flappy.png"
+            ],
+            "link": "http://game.engineering.nyu.edu/projects/exploring-game-space/"
+        },
+        {
+            "name": "Tri-Grid",
+            "year": "2019",
+            "shortDescription": "A randomized image generator for unique, interesting accent or background images",
+            "longDescription": "My goals with this project were to produce a dynamic element I could use on my portfolio while learning more about React, javascript, and HTML canvases. Not only did I achieve those goals, I made an interactive tool to tweak parameters on the fly, and made a tool that can be integrated into other projects as well.",
+            "responsibilities": [
+                "Developed an algorithm to generate unique, randomized grids",
+                "Developed React components to allow easy implementation into other projects",
+                "Implemented parameterization and customization features"
+            ],
+            "technologies": [
+                "React",
+                "HTML",
+                "Canvas",
+                "CSS",
+                "Javascript"
+            ],
+            "images": [
+                "Tri-Grid.png"
+            ],
+            "link": "tri-grid"
+        }
+    ]
+}

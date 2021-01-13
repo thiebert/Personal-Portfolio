@@ -48,28 +48,6 @@ class TriGrid extends React.Component {
         return (points);
     }
 
-    determineColor(position) {
-        let fadeStart = this.style.fadeStart;
-        let fadeEnd = this.style.fadeEnd;
-        let width = this.style.width;
-        let hex = this.style.color;
-        var r = parseInt(hex.slice(1, 3), 16),
-            g = parseInt(hex.slice(3, 5), 16),
-            b = parseInt(hex.slice(5, 7), 16);
-        var distance = Math.sqrt((width - position[0]) * (width - position[0]) + Math.abs(position[1]) * Math.abs(position[1]));
-        let alpha = 0;
-        if (distance < fadeStart) {
-            alpha = 1;
-        }
-        else if (distance > fadeEnd) {
-            alpha = 0;
-        }
-        else {
-            alpha = 1 - (distance - fadeStart) / (fadeEnd - fadeStart);
-        }
-        return ('rgba(' + r + ', ' + g + ', ' + b + ', ' + alpha + ')');
-    }
-
     drawLine(ctx, startPoint, endPoint) {
         ctx.lineTo(endPoint[0], endPoint[1]);
         ctx.stroke();
@@ -132,8 +110,35 @@ class TriGrid extends React.Component {
         ctx.strokeStyle = gradient;
     }
 
-    componentDidMount() {
+    resizeCanvasToDisplaySize() {
+        // look up the size the canvas is being displayed
         const canvas = this.canvasRef.current;
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+
+        // If it's resolution does not match change it
+        if (canvas.width !== width || canvas.height !== height) {
+            canvas.width = width;
+            canvas.height = height;
+        }
+
+        var scaleFactor = (this.style.width / width + this.style.height / height) / 2;
+
+        this.style.width = width;
+        this.style.height = height;
+        this.style.frequency /= scaleFactor;
+        this.style.lineWidth /= scaleFactor;
+        this.style.fadeCenterX /= scaleFactor;
+        this.style.fadeCenterY /= scaleFactor;
+        this.style.fadeStart /= scaleFactor;
+        this.style.fadeEnd /= scaleFactor;
+    }
+
+    componentDidMount() {
+
+        const canvas = this.canvasRef.current;
+        this.resizeCanvasToDisplaySize();
+
         const ctx = canvas.getContext("2d");
 
         ctx.save();
@@ -143,6 +148,7 @@ class TriGrid extends React.Component {
 
         var dataURL = canvas.toDataURL();
         this.canvasRef.current.src = dataURL;
+        window.addEventListener("resize", this.componentDidUpdate.bind(this))
 
         ctx.restore();
     }
@@ -151,6 +157,8 @@ class TriGrid extends React.Component {
         var isActive = this.props.isActive;
         if (isActive) {
             const canvas = this.canvasRef.current;
+            this.resizeCanvasToDisplaySize(canvas);
+
             const ctx = canvas.getContext("2d");
             ctx.save();
             ctx.clearRect(0, 0, this.style.width, this.style.height);

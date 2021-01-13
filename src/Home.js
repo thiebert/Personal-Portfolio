@@ -1,42 +1,20 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Portfolio from './Portfolio.js';
+import Collection from './Collection.js';
 import './App.css';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import TriGrid from './Tri-Grid/TriGrid';
+import Name from './Name.js';
+import projects from './assets/projects.json';
+import play from './assets/play.json';
+import blogs from './assets/blogs.json';
 
 function Home() {
     return (
         <div className="app">
-            <TriGrid className="mesh-image"
-                drawStyle={{
-                    width: "2048",
-                    height: "2048",
-                    frequency: "256",
-                    color: "#B9CB51",
-                    lineWidth: "8",
-                    fadeCenterX: "2048",
-                    fadeCenterY: "0",
-                    fadeEnd: "2000",
-                    fadeStart: "1600"
-                }} />
-            <div className="heading">
-                <Container fluid className="title-block">
-                    <Container>
-                        <Row className="title">
-                            <Col md={{ span: 8 }}>
-                                <h1 className="name">Trevin Hiebert</h1>
-                                <h2 className="jobTitle">Software Creator</h2>
-                                <p className="personal-bio"> Experienced software engineer with a passion for developing compelling, unique, and creative user experiences.</p>
-                                <p className="contact"> hello [at] buildatrev.in | <a href={require("./assets/files/TrevinHiebertResume.pdf")}>Resume</a> </p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Container>
-            </div>
-            <Portfolio />
+            <Name />
+            <Collection title="WORK" subtitle="A sample of finished projects" size={5} more-content="/portfolio" source={projects.projects} />
+
+            <Collection title="PLAY" subtitle="Personal projects, hobbies, and more" size={3} source={play.projects} />
+
+            <Collection title="BLOG" subtitle="Writing about stuff" size={1} source={blogs.projects} />
         </div >
     );
 }

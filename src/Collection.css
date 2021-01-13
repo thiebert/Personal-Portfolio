@@ -1,0 +1,298 @@
+.collection {
+    float: left;
+    width: 100%;
+}
+
+.collection-title {
+    position: absolute;
+    bottom: 0px;
+    padding: 0px 2vw 0vw 2vw;
+    width: 100%;
+}
+
+.collection-title-main {
+    font-size: 72px;
+    line-height: .77;
+    margin-bottom: 0;
+}
+
+.collection-title-band { 
+    position: relative;
+    z-index: 8;
+    height: 200px;
+    width: 100%;
+    background-color: #E8E8E8;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px #333;
+    -moz-box-shadow: 0px 0px 20px 0px #333;
+    box-shadow: 0px 0px 20px 0px #333;
+}
+
+.collection-title-tag {
+    position: relative;
+    padding-bottom: 18px;
+    line-height: 1;
+    margin-bottom: 0;
+    vertical-align: text-bottom;
+    display: inline-block;
+    width: calc(100% - 200px);
+    font-size: 1.5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+}
+
+.project {
+    position: relative;
+    z-index: 1;
+    color: #E8E8E8;
+    background-color: #435058;
+    text-align: left;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vw;
+}
+
+.project h3, .project h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+.project h3 {
+    font-size: 6vw;
+}
+
+.project h4 {
+    font-size: 4.5vw;
+}
+
+.project-text {
+    position: absolute;
+    bottom: 0;
+    padding: 0px 6% 6% 6%;
+    font-size: 3vw;
+}
+
+.project:hover .details {
+    height: 42vw;
+} 
+
+.details {
+    height: 0px;
+    margin-top: 1%;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+
+.project-image {
+    width:100%;
+}
+
+.project-image-parent {
+    position: relative;
+    width:100%;
+}
+
+.image-fade {
+    position: absolute;
+    height:40%;    
+    width:100%;
+    bottom: 0px;    
+    margin: 0 auto;
+    z-index:0;
+    background: -moz-linear-gradient(top, rgba(67,80,88,0) 0%, #435058 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(67,80,88,0) 0%, #435058 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(67,80,88,0) 0%, #435058 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: all .5s;
+}
+
+.project:hover .image-fade {
+    bottom: 54vw;
+}
+
+.image-cover {
+    position: absolute;
+    background-color: #435058;
+    width: 100%;    
+    bottom: 0px;    
+    margin: 0 auto;
+    height: 0px;
+    transition: all .5s;
+}
+
+.project:hover .image-cover {
+    height: 54vw;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    background-color: #21272c;
+    transition: all .5s;
+    
+    transform-origin: 0 0;
+    transform: scaleY(0) translateZ(0);
+    padding: 3.6% 4.8%;
+}
+
+.project:hover .link {
+    transform: scaleY(1) translateZ(0);
+}
+
+.link-text {
+    color: #E8E8E8;
+    display: block;
+    transform: translateY(-.5vw);
+    transition: all .5s;
+    transition-delay: .2s;
+    opacity: 0;
+    font-size: 3vw;
+}
+
+.project:hover .link-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+.more-content {
+    position: relative;
+    z-index: 1;
+    color: #E8E8E8;
+    text-align: right;
+    float: left;
+    overflow: hidden;    
+    width: 100%;
+    height: 100vw;
+}
+
+.content-mesh {  
+    transform: scale3d(1, 1, 1); 
+    transition: all .5s; 
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.more-content:hover .content-mesh{
+    transform: scale3d(1.04, 1.04, 1);
+}
+
+.more-content h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 6vw;
+    transition: all .5s;
+}
+
+.more-content:hover h3{
+    font-size: 6.24vw;
+}
+
+@media(min-width:576px) {
+    .project {
+        width: 50%;
+        height: 50vw;
+    }
+
+    .more-content {
+        width: 50%;
+        height: 50vw;
+    }
+
+    .more-content h3{
+        font-size: 3vw;
+    }
+
+    .more-content:hover h3{
+        font-size: 3.12vw;
+    }
+    
+    .project h3 {
+        font-size: 3vw;
+    }
+
+    .project h4 {
+        font-size: 2.25vw;
+    }
+    
+    .project-text {
+        font-size: 1.5vw;
+    }
+
+    .project:hover .image-cover {
+        height: 27vw;
+    }
+
+    .project:hover .image-fade {
+        bottom: 27vw;
+    }
+
+    .project:hover .details {
+        height: 21vw;
+    } 
+
+    .link-text {
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width:992px) and (min-width:576px) {
+    .project-list :nth-child(2n+1) .more-content{
+        width: 100%;
+    }
+}
+
+@media(min-width: 992px) {
+    .project {
+        width:33.33%;
+        height: 33.33vw;
+    }
+
+    .more-content {
+        width: 33.33%;
+        height: 33.33vw;
+    }
+
+    .more-content h3{
+        font-size: 2vw;
+    }
+
+    .more-content:hover h3{
+        font-size: 2.08vw;
+    }
+    
+    .project h3 {
+        font-size: 2vw;
+    }
+
+    .project h4 {
+        font-size: 1.5vw;
+    }
+
+    .project-text {
+        font-size: 1vw;
+    }
+
+    .project:hover .image-cover {
+        height: 18vw;
+    }
+
+    .project:hover .image-fade {
+        bottom: 18vw;
+    }
+    
+    .project:hover .details {
+        height: 14vw;
+    }
+
+    .link-text {
+        font-size: 1vw;
+    }
+}
